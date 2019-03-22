@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css" integrity="sha256-YR4HrDE479EpYZgeTkQfgVJq08+277UXxMLbi/YP69o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div>
+        <h1 id="fontType1">Where are the Landmarks?</h1>
+        <p class="main" id="fontType2"> - Let Data Tell You.</p>
+        <p id="fontType2">We used an inventory of cultural landmarks offered by City of Philadelphia Open Data to locate different types of landmarks within the borders of the City of Philadelphia.</p>
+        <p id="fontType2">By clicking buttons, users can view locations of different landmarks, including parks, historic landmarks, museums, community centers, houses of worship, and cemeteries.</p>
+      </div>
+    </br>
+      <div id="results1" style="display: none;"></div>
+      <div id="results2" style="display: none;"></div>
+      <button type="button" id="next">Next Page</button>
+      <button type="button" id="back">Previous</button>
+      <div id="tri"></div>
+    </div>
+    <!-- Map -->
+    <div id="map" style="height:100%; position:absolute; right:0px; left:400px"></div>
+    <!-- Legend -->
+    <div class="legend">
+      <div id="type1"></div>
+      <div id="type2"></div>
+      <div id="type3"></div>
+      <div id="type4"></div>
+      <div id="type5"></div>
+    </div>
+    <div class="legendText">
+      <div id="type1Text">Parks</div>
+      <div id="type2Text">Historic Landmarks</div>
+      <div id="type3Text">Community Centers</div>
+      <div id="type4Text">Houses of Worship</div>
+      <div id="type5Text">Cemetery</div>
+    </div>
+    <!-- Javascript Imports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js" integrity="sha256-6BZRSENq3kxI4YYBDqJ23xg0r1GwTHEpvp3okdaIqBw=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js" integrity="sha256-O4179En8zabOlPYBNvGp8cF0uh0vnSZpW4Q6Ul1h+8c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
